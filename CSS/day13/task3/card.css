@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.main{
+
+    background-color: black;
+    color: aqua;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+
+
+
+}
+
+.box{
+    background-color: aliceblue;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+     box-shadow: whitesmoke solid 2px;
+    transition: 3s;
+    
+    
+
+    
+}
+
+
+.box:hover{
+
+
+    background-color: bisque;
+    transform: scaleY(0.8);
+   
+    
+}

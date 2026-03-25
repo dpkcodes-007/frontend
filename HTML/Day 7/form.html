@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form process</title>
+</head>
+<body>
+    <center>
+        <h1>Online Shopping Order Form</h1>
+
+<table >
+
+<tr>
+    <td><label for="name">Enter your name :</label ></td>
+     <td><input type="text" placeholder="fullname" required> </td>
+    
+
+</tr>
+<tr>
+    <td><label for="email"> Email id :</label>
+        <td><input type="email" value="@gmail.com" required> </td>
+    
+    
+    
+</tr>
+<tr>
+    <td><label for="no"> Phone no:</label ></td>  
+     <td> <input type="tel" maxlength="10" placeholder="Enter 10 digit no"></td>
+    
+
+    
+</tr>
+<tr>
+
+    <td><label for="product" name="product"> Product Selection</label></td>
+    <td><input type="checkbox" name="product"> Shirt
+     <input type="checkbox"name="product"> T-Shirt
+    <input type="checkbox"name="product"> Baggy Jeans
+    <input type="checkbox"name="product"> Track Pants
+    <input type="checkbox"name="product"> Formals</td>
+
+</tr>
+<tr>
+    <td><label for="Quantity">Quantity :</label ></td>
+     <td><input type="number" min=1 max="100" placeholder=" Aleast 1 " required> </td>
+    
+
+</tr>
+<tr>
+    <td><label for="Size">Select your size:</label ></td>
+     <td><input type="radio" name="size" > S
+      <input type="radio" name="size" > M
+       <input type="radio" name="size" >L 
+        <input type="radio" name="size" > XL
+         <input type="radio" name="size">XXL </td>
+    
+
+</tr>
+<tr>
+    <td><label for="color">Color:</label></td>
+    <td>
+<select required>
+ <option selected disabled>choose color</option>
+<option value="">Red</option>
+<option value=""> White</option>
+<option value="">Black</option>
+<option value="">Blue</option>
+<option value="">Green</option>
+<option value="">Grey</option>
+<option value="">Pink</option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="Address">Address:</label></td>
+   <td> <textarea required placeholder="delivery address"></textarea> 
+    </td>
+</tr>
+<tr>
+
+<td><label for="pay">Payment Method:</label></td>
+<td>
+    <input type="radio" name="pay" id="">UPI
+    <input type="radio" name="pay" id="">Credit/Debit Card
+    <input type="radio" name="pay" id=""> COD
+</td>
+
+
+</tr>
+<tr>
+    <td></td>
+    <td><input type="submit" value="confirm order" >
+    <input type="reset" value="clear all" ></td>
+    <td></td>
+</tr>
+
+
+</table>
+<div>
+    <table border="5">
+<thead>
+<th>s.no</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Product</th>
+<th>Quantity</th>
+<th>Size</th>
+<th>Color</th>
+<th>Address</th>
+<th>Payment</th>
+
+<tbody>
+    <tr>
+<td> S.NO</td>
+<td> Deepak R</td>
+<td> abc123gmail.com</td>
+<td> 2526547687</td>
+<td> Track pant</td>
+<td> 1</td>
+<td> M</td>
+<td> Black</td>
+<td> Erukkanchery,Chennai</td>
+<td> UPI</td>
+
+    </tr>
+</tbody>
+
+</thead>
+
+
+    </table>
+
+
+</center>
+    
+</body>
+</html>

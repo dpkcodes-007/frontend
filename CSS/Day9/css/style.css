@@ -1,0 +1,23 @@
+h1 {
+    background-color: rgb(19, 5, 5);
+    color: blueviolet;
+    width: 500px;
+    height:70px;
+    padding: 80px;
+    border: 10px solid rgb(136, 84, 17);
+    margin: 60px 
+}
+
+
+.box {
+    background-color: rgb(19, 5, 10);
+    color: rgb(100, 91, 109);
+    width: 60px;
+    height:60px;
+    padding: 50px;
+    border: 10px solid rgb(32, 133, 201);
+    margin: 100px 
+}
+    
+
+ 

@@ -1,0 +1,43 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.gallery{
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+  padding:20px;
+  position:relative;
+   
+}
+
+.pet img{
+  
+  width: 350px;
+  height: 200px;
+  gap: 20px; 
+   transition:0.5s;
+}
+
+
+ 
+  
+ 
+
+.pet:hover{
+  transform:scale(1.2);
+}
+
+.do::after{
+
+  content: DOG;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+

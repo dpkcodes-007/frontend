@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Fuel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assests/fuelassist_favicon.png" type="image/x-icon">
+</head>
+<body class="bg-light">
+
+    <div class="container d-flex flex-column justify-content-center align-items-center py-5" style="min-height: 100vh;">
+        
+        <div class="text-center mb-4">
+            <h1 class="fw-bold display-6">Order Fuel</h1>
+            <p class="text-muted">Get fuel delivered to your location quickly</p>
+        </div>
+
+        <div class="card p-4 shadow-sm w-100 border-0" style="max-width: 450px;">
+             
+         <div class="text-center mb-4 mt-2">
+            <img src="assests/fuelassist_favicon.png" width="70" alt="Logo">
+        </div>
+            <form action="thanks.html">
+                
+            <div class="mb-3">
+                <label class="form-label fw-semibold text-secondary">FUEL TYPE</label>
+                <select id="fuelTypeSelect" class="form-select px-3 py-2" aria-label="Select fuel type" required>
+                  <option value="" disabled selected>Select Fuel Type</option>
+                  <option value="1">Petrol</option>
+                  <option value="2">Diesel</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label fw-semibold text-secondary">SELECT AMOUNT</label>
+                  <select id="amountSelect" class="form-select px-3 py-2" aria-label="Select amount" required>
+                  <option value="" disabled selected>Select Valid Amount...</option>
+                  <option value="1" class="low-amt">100</option>
+                  <option value="2" class="low-amt">200</option>
+                  <option value="3" class="low-amt">300</option>
+                  <option value="4">500</option>
+                  <option value="5" class="high-amt">1000</option>
+                  <option value="6" class="high-amt">1500</option>
+                  <option value="7" class="high-amt">2000</option>
+                  </select>
+            </div>
+    
+             <div class="mb-4">
+                 <label class="form-label fw-semibold text-secondary">YOUR LOCATION</label>
+                 <textarea class="form-control px-3 py-2" rows="3" placeholder="Enter Full Setup Address or Google Maps Location..." required></textarea>
+             </div>
+
+
+            <div class="text-center mt-4">
+               <button type="submit" class="btn btn-success w-100 py-3 fw-bold fs-5 shadow-sm">Confirm Order</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('fuelTypeSelect').addEventListener('change', function() {
+            const amountSelect = document.getElementById('amountSelect');
+            const lowOptions = amountSelect.querySelectorAll('.low-amt');
+            const highOptions = amountSelect.querySelectorAll('.high-amt');
+            
+            // Re-enable all options first
+            lowOptions.forEach(opt => opt.disabled = false);
+            highOptions.forEach(opt => opt.disabled = false);
+            
+            if (this.value === '1') { // Petrol
+                highOptions.forEach(opt => opt.disabled = true);
+                if (['5', '6', '7'].includes(amountSelect.value)) {
+                    amountSelect.value = ""; // Reset if a high amount was selected
+                }
+            } else if (this.value === '2') { // Diesel
+                lowOptions.forEach(opt => opt.disabled = true);
+                if (['1', '2', '3'].includes(amountSelect.value)) {
+                    amountSelect.value = ""; // Reset if a low amount was selected
+                }
+            }
+        });
+        
+        // Setup initial empty state
+        document.getElementById('fuelTypeSelect').dispatchEvent(new Event('change'));
+    </script>
+</body>
+</html>

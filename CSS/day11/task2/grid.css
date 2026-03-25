@@ -1,0 +1,23 @@
+.grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 100px;
+    gap: 80px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.grid img{
+
+     background-color: aqua;
+     height: 150px;
+     width: 150px;
+     padding: 40px;
+     place-items: center;
+
+}
+
+{}{}{}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="assests/fuelassist_favicon.png" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+ 
+  <div class="container p-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="p-4 w-100 card shadow-sm" style="max-width: 500px;" >
+
+        <div class="d-flex justify-content-center mb-2">
+            <img src="assests/fuelassist_favicon.png" width="80" alt="Logo">
+        </div>
+        
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Register!</h2>
+            <p class="text-muted">Create an account to get started</p>
+        </div>
+        
+<form class="row g-3">
+     <div class="col-md-6">
+    <label for="inputName" class="form-label fw-semibold" >Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+  </div>
+       <div class="col-md-6">
+    <label for="inputMobile" class="form-label fw-semibold" >Mobile Number</label>
+    <input type="number" class="form-control" id="inputMobile" placeholder="Mobile No" required>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label fw-semibold">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="@gmail.com" required>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label fw-semibold">Password</label>
+    <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password" required>
+  </div>
+  <div class="col-12">
+        <label for="adress" class="form-label fw-semibold">Address</label>
+        <textarea class="form-control" name="" id="adress" placeholder="Permanent Address" rows="3" required></textarea>
+    </div>
+ 
+  <div class="col-12" >
+    <label for="city" class="form-label fw-semibold">City</label>
+ <select name="Select select City" id="city" class="form-select" required>
+   <option value="chennai" >Chennai</option>
+ </select>
+  </div>
+  
+  <div class="col-12 text-center mt-4">
+      <a href="login.html" class="btn btn-success px-5 py-2 w-100 fw-semibold">Complete Registration</a>
+  </div>
+  <div class="col-12 text-center mt-3">
+      <p class="mb-0 text-muted">Already have an account? <a href="login.html" class="text-decoration-none fw-bold">Login</a></p>
+  </div>
+  
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main{
+    
+    color: burlywood;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+
+    background-color: white;
+   place-items: center;
+   padding: 10px;
+   box-shadow: antiquewhite solid 3px;
+   border-radius: 10px;
+   transition: 1s;
+
+}
+
+ .card img{
+    display: grid;
+
+ }
+
+ button{
+    background-color:burlywood;
+    color: chocolate;
+    display: grid;
+    width: 90px;
+    height: 25px;
+    border-radius: 15px ;
+    justify-content: center;
+    align-content: center;
+
+ }
+
+
+ .card:hover{
+     
+    background-color:burlywood;
+    color: lightsalmon;
+    transform: scaleZ(1.5);
+
+
+
+ }
+
+
+ @media (max-width:750px){
+
+   .main{
+      grid-template-columns: 1fr;
+   }
+
+}
+
+
+

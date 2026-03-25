@@ -1,0 +1,25 @@
+.box{
+   background-color: black;
+   color: white;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   
+} 
+
+
+h1{   background-color: brown;
+    color: blueviolet;
+    height: 150px;
+    width: 150px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+{}{}{}{}{}

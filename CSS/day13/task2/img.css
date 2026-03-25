@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.main{
+
+    background-color: black;
+    color: aliceblue;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 2s;
+
+
+}
+
+img:hover{
+
+    transform: scale(2.2);
+}

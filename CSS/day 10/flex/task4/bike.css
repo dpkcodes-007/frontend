@@ -1,0 +1,78 @@
+.god{
+
+background-color: yellow;
+color: blue;
+
+height: 100vh;
+gap: 20px;
+display: flex;
+
+
+
+
+
+
+
+}
+
+.bike1{  
+    background-color: black;
+    color: white;
+    height: 480px;
+    width: 430px;
+    padding: 15px;
+  
+
+    
+}
+
+.bike2{  
+    background-color: black;
+    color: white;
+    height: 480px;
+    width: 430px;
+    padding: 15px;
+    
+}
+
+.bike2 center {
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.bike3{  
+    background-color: black;
+    color: white;
+    height: 480px;
+    width: 430px;
+    padding: 15px;
+    
+    
+}
+
+.bike4{  
+    background-color: black;
+    color: white;
+    height: 480px;
+    width: 430px;
+    padding: 15px;
+    
+}
+
+
+.bike1button{
+align-items: center;
+    
+}
+
+
+
+
+
+
+
+/* {}{}{} */

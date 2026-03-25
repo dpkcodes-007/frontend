@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placing Form</title>
+</head>
+<body> 
+  <form action="" method="post" ><center>
+    <h1>Order Placing Form</h1>
+    <table>
+
+        <tr>
+            <td><label for="fullname">Your Name</label></td>
+            <td><input type="text" placeholder="fullname" required></td>
+        </tr>
+
+         <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" value="@gmail.com" required></td>
+        </tr>
+
+
+          <tr>
+            <td><label for="mob no">Contact</label></td>
+            <td><input type="tell"  maxlength=10  placeholder="mobile no" required></td>
+        </tr>
+
+
+         <tr>
+            <td><label for="product">Select Product</label></td>
+            <td><input type="checkbox" name="product">Shirt
+            <input type="checkbox" name="product">Tshirt
+             <input type="checkbox" name="product">Baggy Jeans
+             <input type="checkbox" name="product">Shoe        
+        
+        </td>
+        </tr>
+        <tr>
+    <td><label for="color">Color:</label></td>
+    <td>
+        <select required>
+        <option selected disabled>choose color</option>
+         <option value=""> White</option>
+         <option value="">Black</option>
+          <option value="">Blue</option>
+         <option value="">Green</option>
+          <option value="">Grey</option>
+          <option value="">Pink</option>
+
+        </select>
+       </td>
+      </tr>
+        <tr>
+            <td><label for="Quantity">Quantity</label></td>
+           <td> <input type="number" min=1 max=100 placeholder="Aleast 1" required ></td>
+
+        </tr>
+         <tr>
+           <td> <label for="size">Size</label></td>
+            <td><input type="radio" name="size" >S
+             <input type="radio" name="size">M
+              <input type="radio" name="size">L
+               <input type="radio" name="size">XL
+                <input type="radio" name="size">XXL </td>
+         </tr>
+         <tr>
+            <td><label for="address"> Delivery address</label></td>
+           <td><textarea placeholder="Address" required>Delivery Address</textarea></td>
+         </tr>
+
+        
+
+
+       <tr>
+        <td></td>
+        <td><input type="submit" value="confirm">
+        <input type="reset" value="clear all"> </td>
+       </tr>    </table>
+       
+    </div>
+        <table border="3" >
+       
+       <thead >
+        <th>s.no</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Color</th>
+        <th>Quantity</th>
+        <th>Size</th>
+        <th>address</th>
+
+       </thead>
+
+       <tbody>
+        <tr>
+            <td>1</td>
+           <td>Deepak</td>
+           <td>abcgmail.com</td>
+           <td>blue</td>
+           <td>2</td>
+           <td>M</td>
+           <td>diydf,jdu,kgiyc,chennai -39</td>
+
+        </tr>
+
+
+
+        <tr>
+            <td>2</td>
+              <td>kishore</td>
+                <td>abdgmail.com</td>
+                  <td>white</td>
+                    <td>1</td>
+                      <td>L</td>
+                      <td>dhvufdy,dvjvu,ufeyvd,chennai-</td>
+
+        </tr>
+       </tbody>
+       
+
+
+
+
+    </table>
+    
+</center>
+</form>
+</body>
+</html>

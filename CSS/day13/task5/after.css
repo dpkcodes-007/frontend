@@ -1,0 +1,28 @@
+h2{
+
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding: 20px;
+
+}
+
+
+.one::before{
+    
+    content:"This is all about ::before";
+    background-color: white;
+    color: black;
+    
+
+}
+
+
+.two::after{
+
+    content:"This is all about ::after";
+    background-color: white;
+    color: black;
+
+
+}
