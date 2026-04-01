@@ -1,0 +1,71 @@
+<script>
+
+    const time = ()=> console.log('time is running');
+
+    const main = (callback)=>{
+              
+          callback
+
+    }
+
+    time(main())
+          
+
+     const num = (a,b)=>{
+         console.log("1+3=",a+b );
+         
+     } 
+
+     num(1,3);
+
+
+     const multiply = (x,y)=>{
+        console.log("5*5 =",x*y);
+        
+     }
+     multiply(5,5)
+
+
+
+     const evencheck = (num,callback)=>{
+         return callback(num)
+     }
+     const check =(no)=>{
+     if(no % 2 === 0){
+        return "even";
+        
+     }else{
+        return "odd";
+        
+     }
+    }
+     let result = evencheck(10,check);
+     console.log(result);
+     //doubt
+
+      let word_greeting = "Hello"
+      let name_hero = "Leo"
+     const greeting = (welcome,person)=>{
+        console.log(welcome + " " + person);
+        
+     }
+     const process = (h,l,callback)=>{
+        callback(h,l)
+     }
+     process(word_greeting,name_hero,greeting);
+
+     //even callback
+
+     let array_box =[1,3,2,5,7,8,7,9]
+
+     for(let i = 0;i<array_box.length;i++){
+      
+      if(array_box[i]%2==0){
+         console.log(array_box[i]);
+         
+      };
+      
+     }
+     
+     
+         </script>
