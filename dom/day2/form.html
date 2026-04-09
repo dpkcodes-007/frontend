@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+<form id="refresh">
+    <input type="text" placeholder="enter name " id="username">
+    <input type="tel" placeholder="enter mobile" id="usertel">
+    <button id="regisbtn">Register</button>
+</form>
+    
+
+
+ <script>
+ 
+    const btn = document.getElementById("regisbtn")
+
+    btn.addEventListener("click" , (e)=>{
+
+           const name = document.getElementById("username").value
+           const number = document.getElementById("usertel").value
+           const refresh = document.getElementById("refresh")
+        
+        e.preventDefault()
+
+        let formuser = JSON.parse(localStorage.getItem("button")) || []
+
+        const localStore = {name,number} 
+
+        formuser.push(localStore) 
+        
+         
+        localStorage.setItem("button",JSON.stringify(formuser))
+
+        alert("your data has beeen received")
+
+        refresh.reset()
+
+    })
+
+     </script>
+</body>
+</html>
