@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: pink ;
+    color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+
+
+.logo{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    
+
+}
+
+.img{
+   
+    height: 50px;
+    width: 50px;
+
+}
+
+.details {
+    display: flex;
+   
+  
+
+}
+
+.details a{
+    
+    text-decoration: none;
+    
+
+
+}
+
+
+
